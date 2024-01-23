@@ -8,25 +8,14 @@ const Navbar=()=> {
   
   const videos = [vid1];
   const videoRef = useRef(null);
-
+  
   useEffect(() => {
-    const playNextVideo = () => {
-      const currentVideoIndex = videos.indexOf(videoRef.current.src);
-      const nextVideoIndex = (currentVideoIndex + 1) % videos.length;
-      const nextVideo = videos[nextVideoIndex];
-      videoRef.current.src = nextVideo;
-      videoRef.current.play();
-    };
-
-    videoRef.current.addEventListener('ended', playNextVideo);
-
-    // Ensure the video starts playing when the component mounts
-    videoRef.current.play();
-
-    return () => {
-      videoRef.current.removeEventListener('ended', playNextVideo);
-    };
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 2;
+    }
   }, []);
+
+  
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
