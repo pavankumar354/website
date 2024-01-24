@@ -31,15 +31,21 @@ const Navbar=()=> {
           <source key={index} src={video} type="video/mp4" />
         ))}
       </video>
+      <div className="submenu">
+        <h1>HARNESS THE SYNERGY OF<br/> DATA, ANALYTICS,<br/> AND AI</h1>
+        <p>We are a Data Analytics & AI solutions company that helps<br/> businesses make data-driven decisions</p>
+          <button type="button" className="button1">Let's Connect</button>
+      </div>
+          
     </div>
       <div className="transparent-navbar">
       <div className='header1'>
             <div className="logo1">
-                <a href="/"><img src={log} alt="logo"/></a>
+                <a href="/"><img src={log} alt="logo" className="logo" /></a>
             </div>
             <nav>
                 <a href="/" className="active">Home</a>
-                <a href="/" >Services</a>
+                <a href="/" className="service" >Services</a>
                 <a href="/" >Industries</a>
                 <a href="/" >Case Studies</a>
                 <a href="/" >About US</a>
@@ -49,6 +55,7 @@ const Navbar=()=> {
             <button type="button" className="button">Contact US</button>
           </div>
         </div>
+       
         <div className='header2'><>
             <div className="mobile-header">
               <div className="container">
