@@ -14,7 +14,16 @@ const Navbar=()=> {
       videoRef.current.playbackRate = 2;
     }
   }, []);
-
+  useEffect(() => {
+    const handleScroll = () => {
+      window.scrollY > 0 ? document.body.classList.add('scrolled') : document.body.classList.remove('scrolled');
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+  
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+  
   
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -38,7 +47,7 @@ const Navbar=()=> {
       </div>
           
     </div>
-      <div className="transparent-navbar">
+      <div className="transparent-navbar ">
       <div className='header1'>
             <div className="logo1">
                 <a href="/"><img src={log} alt="logo" className="logo" /></a>

@@ -1,8 +1,6 @@
-.head {
-    font-size: 100px;
-    color: black;
-    
-}
+
 .home  {
     background-size: cover;
+    height: 100vh;
+    
 }
