@@ -1,4 +1,5 @@
 import log from "./logo.png"
+import log1 from "./logo1.png"
 import React, {  useEffect, useRef,useState } from 'react';
 import { FiMenu } from "react-icons/fi";
 import vid1 from "./1.mp4"
@@ -15,15 +16,15 @@ const Navbar=()=> {
     }
   }, []);
   useEffect(() => {
-    const handleScroll = () => {
-      window.scrollY > 0 ? document.body.classList.add('scrolled') : document.body.classList.remove('scrolled');
-    };
-  
-    window.addEventListener('scroll', handleScroll);
-  
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-  
+  const handleScroll = () => {
+    window.scrollY > 0 ? document.body.classList.add('scrolled') : document.body.classList.remove('scrolled');
+  };
+
+  window.addEventListener('scroll', handleScroll);
+
+  return () => window.removeEventListener('scroll', handleScroll);
+}, []);
+
   
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -49,8 +50,11 @@ const Navbar=()=> {
     </div>
       <div className="transparent-navbar ">
       <div className='header1'>
-            <div className="logo1">
+            <div className="logo2">
                 <a href="/"><img src={log} alt="logo" className="logo" /></a>
+            </div>
+            <div className="logo1">
+                <a href="/"><img src={log1} alt="logo" className="logo" /></a>
             </div>
             <nav>
                 <a href="/" className="active">Home</a>
@@ -69,8 +73,11 @@ const Navbar=()=> {
             <div className="mobile-header">
               <div className="container">
                 <div className="cont1">
-                  <a href="/"><img src={log} className="logo" alt="logo"/></a>
+                  <a href="/"><img src={log1} className="logo" alt="logo"/></a>
                 </div>
+                <div className="logo2">
+                <a href="/"><img src={log} alt="logo" className="logo" /></a>
+            </div>
                 <div className="cont2">
                 <button className="toggle-button" onClick={toggleMenu}>
                 <FiMenu />
