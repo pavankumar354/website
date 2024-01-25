@@ -63,10 +63,9 @@ const Navbar=()=> {
                 <a href="/" >Case Studies</a>
                 <a href="/" >About US</a>
                 <a href="/" >Careers</a>
+                <button type="button" className="button">Contact US</button>
           </nav>
-          <div>
-            <button type="button" className="button">Contact US</button>
-          </div>
+          
         </div>
        
         <div className='header2'><>
