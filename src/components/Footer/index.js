@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="footer">
 			
             <div className="section">
-                <img src={log} alt="image" />
+                <img src={log} alt="images" />
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing<br/> elit phasellus in nibh elementisque gravida elit eu pulvinar laoreet fusce rhoncus.</p>
                 <div className="social-icons">
                     <a href="https://www.facebook.com"><FaFacebook /></a>
