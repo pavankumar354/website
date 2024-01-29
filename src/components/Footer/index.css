@@ -4,7 +4,9 @@
   align-items: center;
   padding: 20px;
   background-color: #f0f0f0; 
-  
+  background-image: url(Bg-Grapich-1.png);
+  background-repeat: no-repeat;
+    background-position: right;
   height: 400px;/* Adjust color as needed */
 }
 @media (max-width:768px){
