@@ -5,51 +5,54 @@ import React from 'react';
 import './index.css';
 
 const Footer = () => {
-    return (
-		<footer>
-        <div className="footer">
-			
-            <div className="section">
-                <img src={log} alt="images" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing<br/> elit phasellus in nibh elementisque gravida elit eu pulvinar laoreet fusce rhoncus.</p>
-                <div className="social-icons">
-                    <a href="https://www.facebook.com"><FaFacebook /></a>
-                    <a href="https://www.twitter.com"><FaTwitter /></a>
-                    <a href="https://www.instagram.com"><FaInstagram /></a>
-                    <a href="https://www.linkedin.com"><FaLinkedin /></a>
-                </div>
-            </div>
-            <div className="section">
-                <h4 className='head'>Quick Links</h4>
-                <ul>
-                    {/* Add list items for each link */}
-                    <li><span className='icon'><FaRegArrowAltCircleRight /></span>Home</li>
-                    <li><span className='icon'><FaRegArrowAltCircleRight /></span>About Us</li>
-                    <li><span className='icon'><FaRegArrowAltCircleRight /></span>Home</li>
-                    <li><span className='icon'><FaRegArrowAltCircleRight /></span>About Us</li>
-                </ul>
-            </div>
-            <div className="section">
-                <h4 className='head'>Our Services</h4>
-                <ul>
-                    {/* Add list items for each service */}
-                    <li><span className='icon'><FaRegArrowAltCircleRight /></span>Cyber Security</li>
-                    <li><span className='icon'><FaRegArrowAltCircleRight /></span>Industry 4.0</li>
-                    <li><span className='icon'><FaRegArrowAltCircleRight /></span>Home</li>
-                    <li><span className='icon'><FaRegArrowAltCircleRight /></span>About Us</li>
-                </ul>
-            </div>
-            <div className="section">
-                <h4>Address & Contact</h4>
-                <p>WeWork Krishe Emerald<br />
+  return (
+    <footer class="footer">
+    <div class="container">
+     <div class="row">
+     <div class="footer-col">
+         
+         <img src={log} alt="int" />
+         <p className='para'>NeuzenAI is a leader in the real od Data, Analytics, and AI, dedicated to transforming the way businesses interact with data.</p>
+         <div class="social-links">
+           <a href="/"><i class="fab fa-facebook-f"><FaFacebook/></i></a>
+           <a href="/"><i class="fab fa-twitter"><FaTwitter/></i></a>
+           <a href="/"><i class="fab fa-instagram"><FaInstagram/></i></a>
+           <a href="/"><i class="fab fa-linkedin-in"><FaLinkedin/></i></a>
+         </div>
+       </div>
+       <div class="footer-col">
+         <h4>Quick Links</h4>
+         <ul>
+           <li><a href="/"><FaRegArrowAltCircleRight/>Home</a></li>
+           <li><a href="/"><FaRegArrowAltCircleRight/>About Us</a></li>
+           <li><a href="/"><FaRegArrowAltCircleRight/>Services</a></li>
+           <li><a href="/"><FaRegArrowAltCircleRight/>Industries</a></li>
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>Our Services</h4>
+         <ul>
+           <li><a href="/"><FaRegArrowAltCircleRight/>Cyber Security</a></li>
+           <li><a href="/"><FaRegArrowAltCircleRight/>Industry 4.0</a></li>
+           <li><a href="/"><FaRegArrowAltCircleRight/>Artificial Intelligence</a></li>
+           <li><a href="/"><FaRegArrowAltCircleRight/>Data Engineering</a></li>
+           
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>Address & Contact</h4>
+         <p className='para'>WeWork Krishe Emerald<br />
                 Laxmi Cyber City<br />
                 Hitec City, Kondapur<br />
                 Hyderabad, TS 500081<br />
                 </p>
-				<p>Call Us : +91-8885257422</p>
-            </div>
-        </div></footer>
-    );
+				<p className='para'>Call Us : +91-8885257422</p>
+       </div>
+       
+     </div>
+    </div>
+ </footer>
+  );
 }
 
 export default Footer;
