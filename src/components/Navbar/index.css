@@ -123,7 +123,23 @@ button {
     opacity: 1;
   }
 }
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; 
+  object-fit: fit;/* Place the video background behind other elements */
+  flex: 1 1 0;
+}
 
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 @media (min-width:1201px){
   .transparent-navbar {
     position: fixed;
@@ -167,25 +183,8 @@ button {
   .fixed-top.scrolled {
     background-color: rgba(0, 0, 0, 0.8); /* Darker when scrolled */
   }
-  .video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1; 
-    object-fit: fit;/* Place the video background behind other elements */
-    flex: 1 1 0;
-    
-  }
   
-  video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    
-  }
+  
   
 }
 
@@ -221,23 +220,8 @@ button {
   .fixed-top.scrolled {
     background-color: rgba(0, 0, 0, 0.8); /* Darker when scrolled */
   }
-  .video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1; 
-    object-fit: fit;/* Place the video background behind other elements */
-    flex: 1 1 0;
-  }
   
-  video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+ 
   
 }
 
@@ -266,12 +250,7 @@ button {
       display: none;
     }
   }
-  video{
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    object-fit: cover;
-  }
+  
   .submenu {
     position: absolute;
     top: 30px;
@@ -404,12 +383,7 @@ button {
     }
     
   }
-  video{
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    object-fit: fit;
-  }
+  
   .submenu {
     position: absolute;
     top: 100px;
