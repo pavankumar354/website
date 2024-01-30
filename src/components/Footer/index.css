@@ -1,13 +1,13 @@
 .footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   padding: 20px;
   background-color: #f0f0f0; 
   background-image: url(Bg-Grapich-1.png);
   background-repeat: no-repeat;
-    background-position: right;
-  height: 400px;/* Adjust color as needed */
+  background-position: right;
+  height: 100%;/* Adjust color as needed */
 }
 @media (max-width:768px){
   .footer{
@@ -40,15 +40,17 @@ ul li {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  color: black;
 }
 p {
   font-weight: 600;
   font-size: 20px;
+  color: black;
 
 }
 .section h4 {
   margin-bottom: 10px;
-  color: #ff0000; /* Adjust color as needed */
+  color: orangered; /* Adjust color as needed */
 }
 
 .section p, .section ul {
@@ -56,10 +58,10 @@ p {
 }
 .section {
   height: 400px;
-  width: 400px;
-  margin: 20px;
+  width: 300px;
+  margin: 10px;
   color: orangered;
-  margin-right: 30px;
+  margin-right: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,6 +76,6 @@ p {
 
 .social-icons a {
   margin-right: 10px;
-  color: #ff0000; /* Adjust color as needed */
+  color: orangered; /* Adjust color as needed */
   font-size: 40px; /* Adjust size as needed */
 }
