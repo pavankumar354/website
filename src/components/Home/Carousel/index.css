@@ -2,9 +2,9 @@
   height: 500px;
   
   text-align: center;
-  margin: 10px;
+  margin: 5px;
   border-radius: 10px;
-  width: 90%;
+  width: 95%;
 }
 .images{
   width: 100%;
@@ -12,9 +12,10 @@
   border-radius: 10px;
 }
 .carouhead {
-  color: red;
+  color: orangered;
   top: 80%;
   height: 50px;
+  font-size: 25px;
 }
 .arrows {
   height: 40px;
