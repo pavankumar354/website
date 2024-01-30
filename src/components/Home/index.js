@@ -1,5 +1,5 @@
 import Navbar from '../Navbar/index.js'
-
+import Footer from "../Footer/index.js"
 import Carousel from './Carousel/index.js'
 import "./index.css"
 
@@ -12,7 +12,7 @@ const Home=()=>{
                 <h2 className='heading'>What We Do</h2>
                 <Carousel/>
                 </div>
-            
+            <Footer/>
              </div>
     )
 }
