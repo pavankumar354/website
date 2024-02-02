@@ -2,7 +2,7 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import log from "./logo.png"
 import React from 'react';
-import './index.css';
+import './Footer.css';
 
 const Footer = () => {
   return (

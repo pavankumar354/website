@@ -1,0 +1,175 @@
+.navigation {
+ 
+  padding:auto;
+  z-index: 2;
+  vertical-align: middle;
+  
+  height: 90px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  
+  background-color: #fff;
+  color: black;
+  background-color: transparent;
+  
+  box-sizing: border-box;
+  vertical-align: middle;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+ 
+}
+.navigation.scrolled {
+  background-color: white;
+  color: black;
+  
+}
+.brand-name1{
+  display: none;
+}
+
+.navigation.scrolled .navigation-menu li a {
+  color: black;
+}
+.navigation.scrolled .navigation-menu li a:hover {
+  color: orangered;
+}
+.navigation.scrolled .brand-name{
+  display: none;
+}
+.navigation.scrolled .brand-name1{
+  display: block;
+}
+.logo {
+  width: 250px;
+  margin: 10px;
+  height: 60px;
+  margin-top: 20px;
+}
+.brand-name {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  
+}
+.brand-name1 {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  
+}
+.navigation-menu {
+  margin: auto;
+}
+.navigation-menu ul {
+  display: flex;
+  padding: 0;
+}
+.navigation-menu li {
+  
+  list-style-type: none;
+  margin: 0 0.5rem;
+  font-weight: bolder;
+}
+.navigation-menu ul li a:hover {
+  color: orangered; /* Change text color on hover */
+}
+.navigation-menu li a {
+  text-decoration: none;
+  width: 100%;
+  color: white;
+}
+.submenu-arrow{
+  vertical-align: middle;
+  font-size: 15px;
+}
+.hamburger {
+  border: 0;
+  margin: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: orangered;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  display: none;
+}
+.buttonnav {
+  background-color: orangered; /* Adjust button background color as needed */
+  color: #ffffff; /* Adjust button text color as needed */
+  padding: 10px 20px; /* Adjust button padding as needed */
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: auto;
+  margin-right: 20px;
+  margin-top: 15px;
+  text-decoration: none;
+}
+.hamburger:hover {
+  background-color: orangered;
+}
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .navigation-menu{
+    margin: auto;
+    
+  }
+  .hamburger.onClick + .navigation {
+    background-color: white;
+  }
+  .logo {
+    width: 200px;
+    margin: 10px;
+    height: 40px;
+    
+  }
+  .navigation{
+    padding: 0;
+    padding-top: 10px;
+    width: 100vw;
+  }
+  .navigation-menu ul {
+    display: none;
+  }
+  .navigation-menu ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    
+  }
+  .navigation-menu li {
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .navigation-menu li a {
+    color: black;
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+  .navigation-menu li:hover {
+    background-color: #eee;
+  }
+  
+  .navigation-menu.expanded ul {
+    display: block;
+  }
+  .buttonnav{
+    display: none;
+  }
+}

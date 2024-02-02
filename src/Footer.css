@@ -25,10 +25,11 @@ p{
 }
 .footer{
   background-color: #f0f0f0; 
-  background-image: url(Bg-Grapich-1.png);
+  
   background-repeat: no-repeat;
   background-position: right bottom;
     padding: 70px 0;
+    position: relative;
 }
 .footer-col{
    width: 25%;

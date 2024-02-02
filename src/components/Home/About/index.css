@@ -1,0 +1,236 @@
+.container {
+    display: flex;
+    height: 1000px;
+    margin: 0 auto; 
+    max-width: 1500px; 
+    position: relative;
+  }
+  
+  .left {
+    width: 50%;
+    position: relative;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20%;
+  }
+  
+  .left img {
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+    border-radius: 20px;
+    
+  }
+  
+  .left .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    top: 85%;
+    height: 30px;
+    font-weight: bold;
+  }
+  
+  .right {
+    width: 50%;
+    padding: 10px;
+    background-color: transparent;
+    border: 0 solid;
+    
+    text-align: center;
+  }
+  
+  .right .title {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: orangered;
+    text-align: center;
+  }
+  
+  .right .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
+    
+  }
+  
+  .right .cell {
+    padding: 10px;
+    border: 0px solid #ccc;
+    background-color: white;
+    box-sizing: border-box;
+    width: 220px;
+    height: auto;
+    
+  }
+  
+  .right .cell img {
+    width: 220px;
+    height: 80%;
+    border-radius: 20px;
+    transition-duration: 0.3s;
+  }
+  .right .cell img:hover {
+    transform: scale(1.1);
+  }
+  
+  .right .cell .label {
+    font-size: 22px;
+    margin-top: 5px;
+    text-align: center;
+    color: Black;
+    font-weight: bold;
+  }
+  @media (max-width:1360px){
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+    .left{
+      width: 80%;
+      top: 0%;
+      position: center;
+      display: none;
+  
+    }
+    .left img{
+      height: 800px;
+      top: 0%;
+      text-align-last: center;
+    }
+    .right{
+      width: 100%;
+    }
+    
+    .right .grid {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    .right .cell .label {
+      font-size: 20px;
+    }
+    .right .cell {
+      width: 220px;
+    }
+    .right .cell img{
+      width: 210px;
+      
+    margin: 0 auto;
+    }
+    
+  
+    
+  }
+  
+  
+  
+  
+  @media (max-width:325px){
+    .right .grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  
+    }
+    .right .cell img {
+      width: 150px;
+      height: 150px;
+      border-radius: 20px;
+      transition-duration: 0.3s;
+    }
+    .right .cell {
+      height: 200px;
+      width: 170px;
+    }
+    .right .cell .label{
+      font-size: 12px;
+    }
+    .right .title {
+      font-size: 25px;
+    }
+  }
+  @media (min-width:326px) and (max-width:425px){
+    .right .grid {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  
+    }
+    .right .cell img {
+      width: 180px;
+      height: 150px;
+      border-radius: 20px;
+      transition-duration: 0.3s;
+    }
+    .right .cell {
+      height: 200px;
+      width: 170px;
+    }
+    .right .cell .label{
+      font-size: 12px;
+    }
+    .right .title {
+      font-size: 25px;
+    }
+    .right {
+      padding: 3px;
+    }
+  }
+  @media (min-width:426px) and (max-width:600px){
+    .right .grid {
+      grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+  
+    }
+    .right .cell img {
+      width: 190px;
+      height: 150px;
+      border-radius: 20px;
+      transition-duration: 0.3s;
+    }
+    .right .cell {
+      height: 200px;
+      width: 170px;
+    }
+    .right .cell .label{
+      font-size: 12px;
+    }
+    .right .title {
+      font-size: 25px;
+    }
+    .right {
+      padding: 3px;
+    }
+  }
+  @media (min-width:601px) and (max-width:769px){
+    .right .grid {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  
+    }
+    .right .cell img {
+      width: 220px;
+      height: 150px;
+      border-radius: 20px;
+      transition-duration: 0.3s;
+    }
+    .right .cell {
+      height: 200px;
+      width: 220px;
+    }
+    .right .cell .label{
+      font-size: 12px;
+    }
+    .right .title {
+      font-size: 25px;
+    }
+    .right {
+      padding: 3px;
+    }
+  }
+  
+  
