@@ -15,9 +15,9 @@ import ind12 from "./Semi-conductors.png"
 import ind13 from "./Supply chain.png"
 import "./index.css";
 
-function About() {
+function App() {
   return (
-    <div className="container">
+    <div className="aboutcont">
       <div className="left">
         <img src={ind4} alt="Collaborate" />
         <p className="caption">Lets Collaborate and Flourish Unitedly</p>
@@ -80,4 +80,4 @@ function About() {
   );
 }
 
-export default About;
+export default App;
