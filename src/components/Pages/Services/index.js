@@ -1,4 +1,4 @@
-
+import servs from "./standard-quality-control-concept-m.jpg"
 import './index.css';
 
 const Services=()=> {
@@ -6,7 +6,9 @@ const Services=()=> {
  
   return (
     <div>
-        <h2>Services</h2>
+        <img src={servs} alt="services" className='serv'/>
+        <div className="serdiv">
+        <h2 className='serhead'>Our Services</h2></div>
     </div>
   );
 }

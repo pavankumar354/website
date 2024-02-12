@@ -6,7 +6,11 @@ import Navbar from "./Navbar.js";
 import Industries from "./components/Pages/Industries/index.js";
 import Services from "./components/Pages/Services/index.js";
 import Footer from "./Footer.js";
+import CaseStudies from "./components/Pages/CaseStudies/index.js";
+import Careers from "./components/Pages/Careers/index.js";
+import Insights from "./components/Pages/Insights/index.js";
 import './App.css';
+import ContactUS from "./components/Pages/ContactUS/index.js";
 
 function App() {
   return (
@@ -20,6 +24,14 @@ function App() {
         <Route path="/services" element={<Services />}
         />
         <Route path="/industries" element={<Industries />}
+        />
+        <Route path="/casestudies" element={ <CaseStudies/>}
+        />
+        <Route path="/insights" element={<Insights/>}
+        />
+        <Route path="/careers" element={<Careers />}
+        />
+        <Route path="/contactus" element={<ContactUS />}
         />
           </Routes>
       <Footer/>

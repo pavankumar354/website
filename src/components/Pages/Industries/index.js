@@ -1,4 +1,4 @@
-
+import servs from "./1.jpg"
 import './index.css';
 
 const Industries=()=> {
@@ -6,7 +6,9 @@ const Industries=()=> {
  
   return (
     <div>
-        <h2>ABOUT US</h2>
+        <img src={servs} alt="services" className='serv'/>
+        <div className="serdiv">
+        <h2 className='serhead'>Our Industries</h2></div>
     </div>
   );
 }
