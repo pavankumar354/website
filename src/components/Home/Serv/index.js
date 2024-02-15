@@ -3,7 +3,7 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 import React, {  useState} from 'react';
 import './index.css';
 
-import img1 from "./Advanced Analytics.png"
+import img1 from "./Artificial Intelligence.png"
 import img2 from "./Cloud.png"
 import img3 from "./Consulting.png"
 import img4 from "./Data Engineering.png"
@@ -55,6 +55,7 @@ const Serv=()=>{
     return (
         <div className="carousel-container"> 
       <h2 className='carou-head'>What We Do</h2>
+      <p className='paragraph-service'>Our AI company is at the forefront of cutting-edge technology, offering a diverse range of services tailored to meet the evolving needs of businesses in the digital age. From advanced natural language processing to machine learning solutions, our expertise spans the entire spectrum of artificial intelligence. We empower businesses with intelligent automation, enhancing efficiency and decision-making processes. With a commitment to innovation, we deliver state-of-the-art solutions, whether it's image recognition, speech-to-text capabilities, or personalized recommendation engines. Partnering with our AI services ensures not just technological advancement but a strategic edge in an ever-changing market, driving your business towards unparalleled success</p>
     <AliceCarousel
         mouseTracking
         animationDuration={1000}

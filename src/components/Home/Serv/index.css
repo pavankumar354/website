@@ -13,6 +13,7 @@
     width: 100%;
     height: 420px;
     border-radius: 10px;
+    object-fit: fit;
   }
   .carouhead {
     color: orangered;
@@ -20,14 +21,30 @@
     height: 50px;
     font-size: 25px;
   }
+
+  .paragraph-service {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333; /* Choose an appropriate text color */
+    padding: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
   .alice-carousel{
     width: 90%;
     margin: auto;
   }
+
   .arrows {
     height: 40px;
     width: 40px;
   }
+  
   .arrow-left {
     position: absolute;
     left: 10px; /* Set the left position to 0 */
