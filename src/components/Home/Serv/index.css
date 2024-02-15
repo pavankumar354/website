@@ -44,18 +44,18 @@
     height: 40px;
     width: 40px;
   }
-  
+
   .arrow-left {
     position: absolute;
     left: 10px; /* Set the left position to 0 */
-    top: 50%; /* Set the top position to 50% */
+    top: 55%; /* Set the top position to 50% */
     transform: translate(0, -30%); /* Center the element vertically */
   }
   
   .arrow-right {
     position: absolute;
     right:10px; /* Set the right position to 0 */
-    top: 50%; /* Set the top position to 50% */
+    top: 55%; /* Set the top position to 50% */
     transform: translate(0, -30%); /* Center the element vertically */
   }
   .carou-head{

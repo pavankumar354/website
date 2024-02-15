@@ -5,10 +5,10 @@ const CaseStudies=()=> {
   
  
   return (
-    <div>
-        <img src={servs} alt="services" className='serv'/>
-        <div className="serdiv">
-        <h2 className='serhead'>Case Studies</h2></div>
+    <div className="case-container">
+        <img src={servs} alt="services" className='case'/>
+        <div className="casediv">
+        <h2 className='casehead'>Case Studies</h2></div>
     </div>
   );
 }

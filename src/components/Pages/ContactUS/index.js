@@ -5,10 +5,10 @@ const ContactUS=()=> {
   
  
   return (
-    <div>
-        <img src={servs} alt="services" className='serv'/>
-        <div className="serdiv">
-        <h2 className='serhead'>Contact US</h2></div>
+    <div className="contact-container">
+        <img src={servs} alt="services" className='contact'/>
+        <div className="contactdiv">
+        <h2 className='contacthead'>Contact US</h2></div>
     </div>
   );
 }

@@ -5,10 +5,10 @@ const Industries=()=> {
   
  
   return (
-    <div>
-        <img src={servs} alt="services" className='serv'/>
-        <div className="serdiv">
-        <h2 className='serhead'>Our Industries</h2></div>
+    <div className="indus-container">
+        <img src={servs} alt="services" className='indus'/>
+        <div className="indusdiv">
+        <h2 className='indushead'>Our Industries</h2></div>
     </div>
   );
 }
